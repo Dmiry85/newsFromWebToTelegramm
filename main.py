@@ -1,10 +1,11 @@
 from models import *
 import asyncio
 
+# Create instances
 rbk = NewsRbk()
 bot = MyBot()
 
-
+# Define the main coroutine that runs the bot and checks for new articles
 async def main():
     if __name__ == '__main__':
         while True:
@@ -12,4 +13,5 @@ async def main():
             await task1
             await asyncio.sleep(30)
 
+# Run the main coroutine
 asyncio.run(main())
